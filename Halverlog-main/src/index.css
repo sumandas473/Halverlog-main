@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bottombtn {
+    @apply flex bg-[rgba(236,238,240,1)] w-10 h-10 justify-center items-center rounded-lg shadow-[-4px_-3px_4px_0px_rgba(255,255,255,1),3px_4px_4px_0px_rgba(0,0,0,0.25)] hover:scale-105;
+  }
+  .navbtn {
+    @apply flex bg-[rgba(236,238,240,1)] justify-center items-center w-12 h-10 p-1 rounded-xl shadow-[-4px_-3px_4px_0px_rgba(255,255,255,1),3px_4px_4px_0px_rgba(0,0,0,0.25)] hover:scale-110;
+  }
+  .postbutton {
+    @apply flex h-10 px-2 rounded-2xl items-center justify-center bg-[rgba(229,232,234,1)] shadow-[-2px_-1px_4px_0px_rgba(255,255,255,1),0px_4px_4px_0px_rgba(0,0,0,0.25)] hover:scale-105;
+  }
+  .profilebutton {
+    @apply flex h-8 px-2 text-sm rounded-md items-center justify-center bg-[rgba(229,232,234,1)] shadow-[-3px_-2px_4px_0px_rgba(255,255,255,1),2px_2px_4px_0px_rgba(0,0,0,0.25)] hover:scale-105;
+  }
+  .sbutton {
+    @apply flex items-center justify-evenly h-12 mt-4 p-2 px-8 bg-[rgba(217,217,217,1)] rounded-lg shadow-[-5px_-3px_7px_0px_rgba(255,255,255,1),0px_4px_4px_0px_rgba(0,0,0,0.25)] hover:scale-110;
+  }
+  .active {
+    @apply hover:fill-blue-500  hover:text-blue-500;
+  }
+  .activate {
+    @apply fill-blue-500 text-blue-500;
+  }
+}
+
+@media (max-width: 620px) {
+  .remove {
+    display: none;
+  }
+  .add {
+    width: 100%;
+  }
+}
+.hide-scroll::-webkit-scrollbar {
+  width: 0.1rem;
+}
+.hide-scroll::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.hide-scroll::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}

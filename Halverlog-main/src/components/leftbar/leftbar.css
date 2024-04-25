@@ -1,0 +1,18 @@
+@media (max-width: 620px) {
+    
+    .show {
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      transition: all 1s;
+      
+    }
+    .hide {
+      position: absolute;
+      left: -100%;
+      z-index: 10;
+      transition: all 1s;
+      
+    }
+  }
+  
